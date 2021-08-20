@@ -99,3 +99,28 @@ function tratarFuncionarios(funcionarios: Funcionario[]) {
     }
 
 }
+
+let altura: number | null = 1.6;
+altura = null;
+
+type Contato = {
+    nome: string;
+    telefone1: string;
+    telefone2?: string;
+    // "?" depois da variavel permiete marcar mais de um operador.
+}
+
+const contato: Contato = {
+    nome 'Brendo',
+    telefone1: '12345'
+telefone2: '12131231'
+}
+
+// Type Assertion
+const minhaIdade: any = 23;
+(minhaIdade as number).toString();
+
+const input = document.getElementById('numero1') as HTMLInputElement;
+
+const input = <HTMLInputElement>document.getElementById('numero1');
+console.log(input.value);
